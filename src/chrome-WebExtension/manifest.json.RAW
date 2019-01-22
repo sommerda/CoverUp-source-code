@@ -1,0 +1,42 @@
+{
+   "key": "MIGfMA0GCSqGSIb3DBEBAAUAA4GNADCBiQKBgQDcBHwzDvyBQ6bDppkIs9MP4ksKqCMyXQ/A52JivHZKh4YO/9vJsT3oaYhSpDCE9RPocOEQvwsHsFReW2nUEc6OLLyoCFFxIb7KkLGsmfakkut/fFdNJYh0xOTbSN8YvLWcqph09XAY2Y/f0AL7vfO1cuCqtkMt8hFrBGWxDdf9CQIDAQAB",
+   "manifest_version": 2,
+   "name": "SecureExtension",
+   "version": "1.6",
+   "description": "Hands over content to loaded JS",
+
+   "icons": {
+      "128": "images/secure-128.png"
+   },
+
+   "browser_action": {
+       "default_icon": "images/insecure-128.png"
+   },
+
+   "permissions": [
+      "webRequest",
+      "webRequestBlocking",
+      "tabs",
+      "http://*/*",
+      "https://*/*",
+      "nativeMessaging"
+   ],
+
+   "background": {
+	"persistent": true,
+      "scripts": ["scripts/background-script.js"]
+   },
+
+   "content_scripts": [
+      {
+         "matches": [
+           "COVERUP_SERVER_PLACEHOLDER_UndergroundServer/MainServer?flag=tg&fileName=iframe.html"
+         ],
+
+         "js": ["scripts/content-script.js"],
+         "run_at" : "document_end",
+         "all_frames" : true
+      }
+   ]
+}
+

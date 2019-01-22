@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Example Entry Server</title>
+      <style>
+			li{
+			  margin: 10px 0;
+			}
+			p.int {
+			  margin: 10px 20px 10px 10px;
+			}
+			#page-wrap {
+			  width: 800px; 
+			  padding:20px;
+			  margin: 0 auto;
+			  background-color: #FFF
+			}
+			body {
+			  background-color: #eee;
+			}
+       </style>
+   </head>
+
+   <body id="main">
+		<div id="page-wrap">
+
+      		<h1>Example Entry Server</h1>
+      		
+        	<p>This site is a website you would visit every day and is visited by others frequently, too.</p>
+			<p>Aditionally, it requests a small piece of javascript in an iframe which downloads a certain amount of data packets and stores them in your <a href="https://developer.mozilla.org/en/docs/Web/API/Window/localStorage">locaStorage</a> on your disk. From there they can get picked up by an additional external programm.</p>
+			<p><b>This site has to be kept open in a browser-tab with activated JavaScript to make the feed and/or chat work!</b></p>
+      		
+      		<iframe src='COVERUP_SERVER_PLACEHOLDER_UndergroundServer/MainServer?flag=tg&fileName=iframe.html' id='myFrame' frameborder=0 scrolling = 'no' width=1 height=1/>
+		</div>
+   </body>
+</html>

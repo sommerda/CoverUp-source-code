@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<link rel="icon" href="doge.png">
+<title>CoverUp</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+	<!-- Navbar -->
+	<div class="w3-top">
+		<div class="w3-bar w3-red w3-card-2 w3-left-align w3-large">
+			<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+			<a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+			<a href="#report" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Technical Report</a>
+			<a href="#setup" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">General Setup</</a>
+			<a href="#feed" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">External application + Message Feed</a>
+			<a href="#chat" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Messenger</a>
+			<a href="#browsing" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Interactive browser</a>
+		</div>
+
+		<!-- Navbar on small screens -->
+		<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+			<a href="#report" class="w3-bar-item w3-button w3-padding-large">Technical Report</a>
+			<a href="#setup" class="w3-bar-item w3-button w3-padding-large">General Setup</a>
+			<a href="#feed" class="w3-bar-item w3-button w3-padding-large">External application + Message Feed</a>
+			<a href="#chat" class="w3-bar-item w3-button w3-padding-large">Messenger</a>
+			<a href="#browsing" class="w3-bar-item w3-button w3-padding-large">Interactive browser</a>
+		</div>
+	</div>
+
+	<!-- Header -->
+	<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+		<h1 class="w3-margin w3-jumbo">CoverUp</h1>
+		<p class="w3-xlarge">Strengthening Anonymous Communication via Passive Participation</p>
+		<form action=#setup>
+			<button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</a></button>
+		</form>
+	</header>
+
+	<!-- First Grid -->
+	<div class="w3-row-padding w3-padding-64 w3-container">
+		<div class="w3-content">
+			<div class="w3-twothird">
+				<h1>CoverUp</h1>
+				<h5 class="w3-padding-32">Abstract</h5>
+
+				<p class="w3-text-grey">
+					Anonymous communication networks (ACNs) are basic building blocks for obtaining or exchanging data in a privacy-preserving manner. ACNs suffer from a bootstrapping problem: having few users leads to a small anonymity set, which renders the ACN unattrac- tive. We propose a system, CoverUp, that tackles the bootstrapping problem for ACNs. The key idea is to draw in non-ACN users from a collaborating website to connect to an ACN after an informed consent via a JavaScript snippet, thereby triggering them to passively participate (as passive participants). CoverUp implements a privacy-preserving broadcast with a downlink rate of 10 to 50 Kbit/s that renders the traffic of these passive participants indistinguishable from active participants. If this broadcast is accessed via an ACN with a constant-rate traffic pattern, CoverUp contributes active participants with legitimate-looking traffic, thus helping in bootstrapping the ACN. To protect active participants from potentially incriminating broadcast-data, an additional application is needed to extract any information from CoverUp’s broadcast. The indistin- guishability guarantee of CoverUp for broadcasts holds against global network-level attackers that control ev- erything except for the user’s machine. In addition, as long as active participants do not change their surfing behavior on these websites due to CoverUp, they hide their participation time, i.e., do not leak the time at which they listen to the broadcast, which counters intersection and statistical disclosure attacks. As passive participation raises ethical and legal concerns for the collaborating websites and the participants, we discuss these concerns and describe how they can be addressed.
+				</p>
+				<p class="w3-text-grey">
+					We extend CoverUp to bi-directional point-to-point communication (e.g., messengers) with an up- and downlink rate of 10 to 50 Kbit/s. Bi-directional CoverUp can offer users of ACNs with constant-rate traffic an additional entry point that hides their participation time (as above). The indistinguishability for bi-directional CoverUp requires the integrity of the JavaScript snippet, for which we introduce a trusted party. We give evidence that with a latency of 3 seconds (including the random delays) the timing leakage is undetectable, even after a year of continual observation. As long as the timing leakage is undetected, bi-directional CoverUp achieves the same properties as for broadcasts against network-level attackers that control everything except for the user’s machine and the trusted party.
+				</p>
+				<a href="#top">Back to top</a>	
+			</div>
+		</div>
+	</div>
+
+
+	<div id="report" class="w3-row-padding w3-padding-64 w3-container">
+		<div class="w3-content">
+			<div class="w3-twothird">
+				<h1>Technical Report</h1>
+				<iframe src="https://eprint.iacr.org/2017/191.pdf" style="width:600px; height:500px;" frameborder="0"></iframe>
+				<p>
+					<a href="#top">Back to top</a>   
+				</p>
+			</div>
+		</div>
+	</div>    
+
+	<div id="setup" class="w3-row-padding w3-padding-64 w3-container">
+		<div class="w3-content">
+			<div class="w3-twothird">
+				<h1>General Setup</h1>
+				<p>This prototype implementation demonstrates both Message Feed (uni-directional) and Chat (bi-directional channel). The Message Feed works both with <a href="https://www.mozilla.org/en-US/firefox/new/">Mozilla Firefox</a> and <a href="https://www.chromium.org/">Chromium</a> (or <a href="https://www.google.ch/chrome/browser/desktop/">Google Chrome</a>). However, the bi-directional channel (the messenger) works with Chromium only.
+					<p> To get the prototype working, follow these steps: </p>
+					<p>
+						<ol type="1">
+
+							<li>Download the <b>Coverup external software package</b> from the following links (depending on your operating system): 
+								<p><a href="../bin/localhost_no_TLS/CoverUp-Tool/NinjaPumpkin_Win86.jar">Windows 32 bit</a></p>
+								<p><a href="../bin/localhost_no_TLS/CoverUp-Tool/NinjaPumpkin_Win86_64.jar">Windows 64 bit</a></p>
+								<p><a href="../bin/localhost_no_TLS/CoverUp-Tool/NinjaPumpkin_Linux86.jar">Linux 32 bit</a></p>
+								<p><a href="../bin/localhost_no_TLS/CoverUp-Tool/NinjaPumpkin_Linux86_64.jar">Linux 64 bit</a></p>
+								<!--	<p><a href="jars/NinjaPumpkin_Mac.jar">Mac OS/X</a>(may contain some bugs)</p></li>-->
+								<!--	<p><a href="jars/NinjaPumpkin_Mac_browser.jar">Interactive browsing application for Mac OS/X</a></p></li>-->
+								<!--li>Download the <b>CoverUp Chrome extension</b> pack from <a href="CoverUp.zip">this link</a></li-->
+
+								<!--li>Download <a href="CoverUpExtension.zip"> CoverUpExtension.zip</a> and extract. Keep the directory native-msg where you keep the NinjaPumpkin jar file. The included "secure_ext.crx" is the Chrome extension file</li-->
+								<li>Download the Chromium extension <a href="../bin/localhost_no_TLS/chrome-WebExtension/secure_ext.crx">secure_ext.crx</a> and install it as follows:</li>
+
+								<li>Install and open Chromium, navigate to <br> <p class="int">"Settings &#8594; Extensions".</p>Use drag-and-drop to install the extension file (click on the extension file "secure_ext.crx" in your file browser, keep the mouse button  pressed down, and drag it to the Chromium extension window where you release the button).</li>
+
+								<!--li>In Chromium: Click <a href="cert_accept.html">this link</a> and accept the TLS certificate (We generated a self signed certificate).</li-->
+
+								<li>In Chromium: visit our sample entry server page <a href="../bin/localhost_no_TLS/iframe-and-entry-server/example-entry-server.html">here</a></li>
+								<!--li>In Chromium: visit our sample entry server page <a href="https://coverup.tech:8443/example_entry_server.html">here</a></li-->
+
+							</ol> 
+						</p>
+						<p>
+							Now a data packets is downloaded. For this demo, we set the parameters according to the specification in our <a href=#report>technical report</a>. The iframe waits a random amount of seconds uniformly distributed in [1,5] seconds, before it dispatches the first request. After this, it requests periodically data again uniformly distributed in [1,5] seconds.  To read the feed or to use the bidirectional channel, you need to start the external application:
+						</p>
+						<p> 
+							Now we provide step by step instructions to run CoverUp external application. We divided the instructions into three sections: Message Feed, Messenger and Interavtive Browsing.
+						</p>
+
+						<a href="#top">Back to top</a>	 
+					</div>
+				</div>
+			</div>	
+
+			<div id="feed" class="w3-row-padding w3-padding-64 w3-container">
+				<div class="w3-content">
+					<div class="w3-twothird">
+						<h1>Starting External Application and receiving Message Feed</h1>
+
+						<ol type="1">
+							<li> 
+								Execute the CoverUp.jar file by either double clicking it or in console "java -jar NinjaPumpkin&lt; platform &gt;.jar". Make sure you have Java version 1.8 and Python27 installed. ( <font color="red">important : windows users are needed to run the application with admin privilege</font>)
+							</li>
+							<li>
+								You will see this following window. Select the option BROWSER_NATIVE_MESSAGE to select Google Chrome as the primary browser for messenger (bi-directional channel). In this mode, the application listen on the TCP port 56789 from the browser extension to receive information. BROWSER_FIREFOX is for settting Mozilla Firefox but is implemented to receive the unidirectional message feed only. BROWSER_CHROME selects Google chrome as the primary browser for unidirectional message feed on. Both BROWSER_CHROME and BROWSER_FIREFOX polls the localstorage database (cache database of the browser located in the disk) to fetch information.
+								We strongly recommend use BROWSER_CHROME option as the latter is in experimental stage.
+								<p>
+									<div id="image-table">
+										<table>
+											<tr>
+												<td style="padding:5px">
+													<img src="images/firefox_select.JPG" height="100">
+												</td>
+												<td style="padding:5px" height="80">
+													<img src="images/1.JPG">
+												</td>
+												<td style="padding:5px" height="100">
+													<img src="images/native_select.JPG">
+												</td>
+											</tr>
+										</table>
+									</div>
+									After clicking "Select", a file dialog may appear if the you have more than one Chrome profile in your system. In such case choose the one which is currently active. You will see a file prowser like this:
+									<p>
+										<img src="images/profile_select.JPG" height="312" align="middle"> 
+									</li>
+								</p>
+								application failed to detect Chrome's default cache location. In such case navigate to
+								<ul style="list-style-type:disc">
+									<li>
+										"C:\Users\&lt YOUR USER NAME &gt\AppData\Local\Chromium\User Data\Default" and select "Local Storage" directory and press OK if you are using Windows OS.
+									</li>	
+
+									<li>
+										Or put "/home/&lt YOUR USER NAME &gt/.config/chromium/Default/Local Storage/" on the text box and press OK if you are using any Linux distribution.
+									</li>
+
+								</ul>
+
+
+								Only feed user ( <font color="red">no bi-directional channel supported</font>) can also use Firefox  as the default browser. In such case if automactic profile discovery fails, do the following depending on your operation system.
+								<ul style="list-style-type:disc">
+									<li>
+										"C:\Users\&lt YOUR USER NAME &gt\AppData\Roaming\Mozilla\Firefox\Profiles" directory and select the active profile if you are using Windows OS.
+									</li>
+									<li>
+										"~/.mozilla/firefox/ directory and select the active profile if you are using any Linux distribution.
+									</li>
+
+								</ul>
+
+
+								<li>  After this, the main window of the application will appear. On the top, there is a text box where we already have put the public key of CoverUp server.
+									<p>
+										<img src="images/2.JPG" height = "512"> 
+									</li>
+								</p>
+								<li> Click the button "Set Server PK".	
+									<p>
+										<img src="images/3.JPG" height = "512">
+									</li>
+								</p>
+
+								<li> 
+									Click the button "Start Polling" at the bottom left corner. After clicking it will turn to "Stop Polling" and there will be an animation at the left side confirming the polling process is executing. This indicates that the program tries to fetch droplets from Chrome's permanent storage.
+									<p>
+										<img src="images/4.JPG" height = "512">
+									</li>
+								</p>
+								<li> 
+									You can also see the current polling state and error messages by going to "Settings" &#8594; "Show Polling Window menu".	
+									<p>
+										<img src="images/5.JPG" height = "512"> 
+									</li>
+								</p>
+
+								<li> 
+									This will open a new window named "Database polling" showing the polling information. You can also close this window. To stop the polling, click on the "Stop Polling" button at the bottom left corner of the main window.
+									<p>
+										<img src="images/6.JPG" height = "512"> 
+									</li>
+								</p>
+
+								<li> 
+									Click "Load Table" button which loads the list of feed data available from the CoverUp server along with the details. The source gives the identifier of the JavaScript code which communicates with the CoverUp server. We have now place two text data on the CoverUp server for testing purpose which are visible on the screen-shot.	
+									<p>
+										<img src="images/7.JPG" height = "512">
+									</li>
+								</p>
+
+								<li> 
+									Clicking on the "Go" button on any of the table rows will open a new window which shows the assembled droplets of the feed fountain. Click on the "Assemble" button (2nd from the left). In case you have collected insufficient droplets in your local storage, it will show you that there are not enough droplets. Otherwise you will see a message box lke the one displayed in the screen-shot. The message box also provides information such as how many droplets are there on the local storage and how many were utilized to reassemble the data.	
+									<p>
+										<img src="images/8.JPG" height = "512"> 
+									</li>
+								</p>
+
+								<li> 
+									Shows the assembled feed data.	
+									<p>
+										<img src="images/9.JPG" height = "512"> 
+									</li>
+								</p>
+
+								<li> To view the old feed stored in yoor system, go to cool stuff &#8594; feed viewer	
+									<p>
+										<img src="images/feed_viewer.JPG" height = "400"> 
+									</li>
+								</p>
+							</ol>
+
+							<a href="#top">Back to top</a>	 
+						</div>
+					</div>
+				</div>	
+
+
+				<div id="chat" class="w3-row-padding w3-padding-64 w3-container">
+					<div class="w3-content">
+						<div class="w3-twothird">
+							<h1>Messenger Application</h1>
+
+							<ol type="1">
+
+								<li> 
+									<p>
+										Both the chat application in interactive browsing depend on the Chromium browser extension. The communication between the application and the extension is executed via native messaging. This requires some initial setup: First, restart the External Java Application in the mode BROWSER_NATIVE_MESSAGE instead of BROWSER_CHROME. Second, install the required NativeMessaging files. To automate this process go to settings &#8594; Native Messaging Setup. On Windows, this will prompt you to select the python.exe file. On Linux, you need python installed (and accessible in a directory listed in the corresponding $PATH environment vaiable) which should be a part of the default configuration of most Linux distributions.
+									</p>
+									<img src="images/chat/native.JPG" height = "512">
+								</li>
+
+
+								<li> 
+									<p>
+										Go to the menu bar at the top, select "Cool stuff" &#8594; "Messenger"
+									</p>
+									<img src="images/chat/1.JPG" height = "512"> 
+								</li>
+
+								<li> 
+									<p>
+										Selecting the "Messenger" will open the chatting window.
+									</p>
+									<img src="images/chat/2.JPG" height = "512"> 
+								</li>
+
+								<li> 
+									<p>
+										To set up the chatting, we need to first understand how the chatting infrastructure works. Open the file APP_DATA which is located where the NinjaPumpkin&ltplatform&gt.jar is located. Navigate to the "chat" directory. "KeyFile.key" is already generated by the application which is your credential containing your public address, public key and private key. Keep this file secure. Without this file any chat directed to you would be irrecoverable. Provide the public key to the people to who want to send messages to you. "PkList.txt" is a empty file where you have to provide the public keys of the people you want to chat with. "LOGS" contains older chat in plain text as a backup.
+									</p>
+									<img src="images/chat/3.JPG" height = "150"> 
+								</li>
+
+								<li> 
+									<p>
+										This is a snapshot of "pkList.txt". The public keys generated by the CoverUp application are encoded in Base64 format. You can add a new public key by putting it into the text field named "remote public key" and press the button "Add Remote PK". Alternatively you can add a new public key in the file "pkList.txt", each in a new line.
+									</p>
+									<img src="images/chat/4.JPG" height = "512"> 
+								</li>
+
+
+								<li> 
+									<p> 
+										This is a snapshot of your key file in JSON format. address is your public address, sk and pk are your private and public key respectively. Keep this file as a backup in a separate location. You should give the pk to the people whom you want to chat with. 
+									</p>
+									<img src="images/chat/5.JPG" height = "128"> </li>
+
+									<li> 
+										<p>
+											Now go to the chat application, there is a drop down menu which lists all the public keys in your list including unlisted public keys where you received at least one chat. Switch to different addresses to record chat.
+										</p>
+										<img src="images/chat/6.JPG" height = "512"> 
+									</li>
+
+									<li> 
+										<p>
+											Select an address, write in the text box located at the bottom, when you write, the app will also track how much you are writing (marked on the top). Currently we send 512 characters in chat outgoing packets.
+										</p>
+										<img src="images/chat/7.JPG" height = "512"> 
+									</li>
+
+									<li> 
+										<p>Hit the dispatch button. In case the browser extension is not running it will show you an error message.</p>
+										<img src="images/chat/8.JPG" height = "512"> 
+									</li>
+								</ol>
+								<a href="#top">Back to top</a>
+
+							</div>
+						</div>
+					</div>	
+
+					<div id="browsing" class="w3-row-padding w3-padding-64 w3-container">
+						<div class="w3-content">
+							<div class="w3-twothird">
+								<h1>Interactive Browsing Mode</h1>
+
+								<ol type="1">
+									<li> 
+										<p> 
+											First Press the button "Dump Table" button at the main window (2nd from the right most button). This will save a copy of the fountain table on the CoverUp application's local storage for interactive browsing purpose. Then go to the top menu button "Cool Stuff &#8594; Covert Browsing. For Mac OS/X users a separate jar file is  provided for the interactive browsing (download from <a href="jars/CoverUp_Mac_browser.jar">Here</a>)
+										</p>
+										<img src="images/browsing/1.JPG" height = "512"> 
+									</li>
+
+									<li> 
+										<p>
+											A new window will open which will invoke a native instance of the default web browser of the operating system you are using.
+										</p>
+										<img src="images/browsing/2.JPG" height = "512">
+									</li>
+
+									<li> 
+										<p>Click the button "Load Covert site Tree" which will load the the covert site map (over view of the interactive website delivered by CoverUp server in a tree like data structure). The root node of the tree will appear (ROOT) on the panel right below the previously mentioned button.
+										</p>
+
+										<img src="images/browsing/3.JPG" height = "512"> 
+									</li>
+
+									<li> 
+										<p> Clicking on "ROOT" will expand the entire tree. In the test version we only kept 9 documents under the main directory which forms a single level tree. Note that on the first instance all the nodes will be colored as red which denotes that there are no interactive data available on the local storage of the CoverUp application installation.</p>
+										<img src="images/browsing/4.JPG" height = "512"> 
+									</li>
+
+									<li> 
+										<p>
+											Clicking on one of the nodes (marked in red) will add to the list of request to be dispatched. Which is shown on the top right corner(highlighted).
+										</p>
+										<img src="images/browsing/5.JPG" height = "512"> 
+									</li>
+
+									<li> 
+										<p> 
+											You can also modify your selection of web pages by clicking the "Modify" button. Which will bring a new window where you can delete a web page request by clicking on it and select the "Delete" button.
+										</p>
+										<img src="images/browsing/6.JPG" height = "512">
+									</li>
+
+									<li> 
+										<p>After that press the "Dispatch" button which will communicate with the Chrome CoverUp extension and send the selected web page request. In case the chrome extension is not running, it may send an error message shown in the screen-shot.
+										</p>
+										<img src="images/browsing/7.JPG" height = "200"> 
+									</li>
+
+									<li> 
+										<p>
+											When you start receiving interactive browsing data, you will see some of the red nodes turned black on the next startup of the browsing window. One such example is shown in the screen-shot.
+										</p>
+										<img src="images/browsing/8.JPG" height = "512"> 
+									</li>
+
+									<li> 
+										<p> 
+											Clicking on the node will render the page.
+										</p>
+										<img src="images/browsing/9.JPG" height = "512">
+									</li>
+
+
+								</ol>
+
+								<a href="#top">Back to top</a>	 
+							</div>
+						</div>
+					</div>	
+
+
+
+
+					<a href="#top">Back to top</a>	 
+				</div>
+			</div>
+		</div>	
+
+
+
+		<!-- Footer -->
+
+<!--<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>-->
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+	var x = document.getElementById("navDemo");
+	if (x.className.indexOf("w3-show") == -1) {
+		x.className += " w3-show";
+	} else { 
+		x.className = x.className.replace(" w3-show", "");
+	}
+}
+</script>
+
+</body>
+</html>

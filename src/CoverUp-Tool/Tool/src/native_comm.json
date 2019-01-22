@@ -1,0 +1,10 @@
+{
+  "name": "native_comm",
+  "description": "Chrome Native Messaging API Example Host",
+  "path": "C:\\A\\native_messaging\\native_ext.bat",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://hdcigkkjdbihcfppnomipaadklmofhjl/",
+    "chrome-extension://dcgbplpkphamfmgclhmmdmnkdhhjbdbb/"
+  ]
+}

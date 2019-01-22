@@ -1,0 +1,89 @@
+Black American Sign Language
+From Wikipedia, the free encyclopedia
+Black American Sign Language
+A series of four hands fingerspelling "B-A-S-L" Fingerspelling of "BASL"
+Region 	North America
+Language family
+	
+French Sign–based (possibly a creole)
+
+    American Sign Language
+        Black American Sign Language
+
+Language codes
+ISO 639-3 	–
+Glottolog 	None
+
+Black American Sign Language (BASL) or Black Sign Variation (BSV) is a dialect of American Sign Language (ASL)[1] used most commonly by deaf African Americans in the United States. The divergence from ASL was influenced largely by the segregation of schools in the American South. Like other schools at the time, schools for the deaf were segregated based upon race, creating two language communities among deaf signers: White deaf signers at White schools and Black deaf signers at Black schools. Today, BASL is still used by signers in the South despite public schools having been legally desegregated since 1954.
+
+Linguistically, BASL differs from other varieties of ASL in its phonology, syntax, and vocabulary. BASL tends to have a larger signing space, meaning that some signs are produced further away from the body than in other dialects. Signers of BASL also tend to prefer two-handed variants of signs, while signers of ASL tend to prefer one-handed variants. Some signs are different in BASL as well, with some borrowings from African American English.
+
+Contents
+
+    1 History
+    2 Phonology
+    3 Syntax
+    4 Lexical variation
+        4.1 Borrowing from African-American English
+    5 See also
+    6 Notes
+    7 References
+
+History
+
+Like many educational institutions for hearing children during the 1800s and early 1900s, schools for deaf children were segregated based on race.[2] The first school for the deaf in the United States, the American School for the Deaf (ASD), was founded in 1817 but did not admit any Black students until 1952. Of the schools for the deaf that were founded, few admitted students of color.[3] Seeing a lack of educational opportunities for Black deaf children, Platt Skinner founded the Skinner School for the Colored Deaf, Dumb, and Blind in 1856 in Niagara Falls, New York. Skinner described his school as "the first effort of its kind in the country ... We receive and instruct those and only those who are refused admission to all other institutions and are despised on account of their color."[4][5] The school moved to Trenton, New Jersey in 1860. After it closed in 1866,[6][7] no Northern state created an institution for Black deaf children. Even after these states outlawed segregation by 1900, integration was sparse, as some institutions allowed Black students and others did not.[8][9]
+
+After the foundation and success of the American School for the Deaf, many other institutions for the deaf were founded throughout the country. Since schools, particularly in the South, were segregated, many Southern states created separate schools or departments for Black deaf children. The first school established for Black deaf children below the Mason–Dixon line opened in the District of Columbia in 1857; it remained segregated until 1958. The last Southern state to create an institution for Black deaf children was Louisiana in 1938. Black deaf children became a language community isolated from White deaf children, with different means of language socialization, allowing for different dialects to develop. Because the education of White children was privileged over that of Black children, oralism—the prominent pedagogical method of the time—was not as strictly applied to the Black deaf students. Oralist methods often forbade the use of sign language, so Black deaf students had more opportunities to use ASL than did their White peers. Despite the decision in Brown v. Board of Education (1954), which declared racial segregation in public schools to be unconstitutional, integration was slow to come. Schools for the deaf were no exception: the last desegregated in 1978, 24 years after the decision.[10][11]
+
+As schools began to integrate, students and teachers noticed differences in the way Black students and White students signed. Carolyn McCaskill, now professor of ASL and Deaf Studies at Gallaudet University, recalls the challenge of understanding the dialect of ASL used by her White principal and teachers after her segregated school of her youth integrated: "When I began attending the school, I did not understand the teacher and she did not understand me because we used different signs."[12] Carl Croneberg was the first to discuss differences between BASL and White ASL in his appendices of the 1965 version of the Dictionary of American Sign Language. Work has continued on BASL since then.[13][14]
+
+As deaf education and sign language research continued to evolve, so did the perception of ASL. With the publication of the Dictionary of American Sign Language, ASL began to be recognized as a legitimate language. The greater acceptance of ASL as a language led to standardization and the development of a prestige dialect, which was based upon the signs used at Gallaudet University.[15] Despite this standardization, ASL has regional, distinct accents similar to those of spoken languages.[16] Dialects that are different from the standard one, and especially those spoken by marginalized groups, are often stigmatized.[17] As a non-standard dialect, BASL is stigmatized by signers and considered to be inferior to prestige dialects of ASL.[18] This difference in prestige has led BASL speakers to code switch to a prestige dialect when speaking with different groups of people, despite BASL being mutually intelligible with other dialects of ASL.[19]
+Table of states with black deaf schools[20] State 	White school
+
+established
+	Black school
+
+or department established
+	Integration
+Washington, D.C. 	1857 	1857 (dept.) 	1958
+North Carolina 	1845 	1868–1869 	1967
+Maryland 	1868 	1872 	1956
+Georgia 	1846 	1882 	1965
+Tennessee 	1845 	1881 (dept.) 	1965
+Mississippi 	1854 	1882 (dept.) 	1965
+South Carolina 	1849 	1883 (dept.) 	1966
+Kentucky 	1823 	1884 (dept.) 	1954–1960
+Florida 	1885 	1885 	1965
+Texas 	1857 	1887 	1965
+Arkansas 	1850/1867 	1867 	1967
+Alabama 	1858 	1868 	1968
+Missouri 	1861 	1888 (dept.) 	1954
+Virginia 	1839 	1909 	1965
+Oklahoma 	1898 	1909 (dept.) 	1962
+Kansas 	1861 	1888 (dept.) 	1954
+Louisiana 	1852 	1938 	1978
+West Virginia 	1870 	1926 	1956
+Phonology
+Silhouette of a man standing with a gray translucent box superimposed over his torso and face
+The gray box represents the typical signing space of ASL. Signers of BASL are more likely to produce signs outside of this area than other signers.[21]
+
+When asked, many signers in the South gave anecdotal accounts of differences between the signing of Black and White signers. These differences turned out to be aspects of the differing phonology of BASL. Among these accounts were claims that Black signers had a larger signing space and used more two-handed signs. Investigation into these anecdotes has found correlations.[22]
+
+When compared, Black signers were more likely than were White signers to produce signs outside of the typical signing space and to use two-handed signs.[21][23] Adverbs are most likely to use a larger signing space. Less marked forms, such as pronouns, determiners, plain verbs, and nouns, tend to be less likely to be produced outside the typical signing space.[21][24] The selection of two-handed signs over one-handed signs was found to have systematic constraints on their production. When the sign could be produced with one or two hands, Black signers often produced the variant that matched the handedness of the following sign; if the following sign was two-handed, they were more likely to produce a two-handed variant, while if the following sign was one-handed, they were more likely to produce the one-handed variant. The use of innovative one-handed forms, though, even in environments which favored them, did not exceed 50 percent.[25]
+
+BASL signers further tend to favor lowered variants of side-of-forehead signs resulting in contact at the cheek. The sign KNOW is usually produced by placing the fingers of a flat hand on the temple, but when lowered the fingers make contact at the cheek.[26][27] Early research showed that BASL signers used these lowered forms at a rate of 53 percent, with grammatical category being the strongest constraint.[28] Other conditioning environments for lowered signs depend on preceding location; for instance, signs produced in front of the body lead to lowered sign variants, while signs produced at the head cause signers to favor non-lowered forms.[29]
+Syntax
+
+Unlike ASL, BASL allows for the frequent use of syntactic repetition. In a study conducted by McCaskill, of 26 signers (13 Black and 13 White), Black signers had 57 instances of repetition compared to 19 from White signers, and of those 19 instances, 18 were made by a single signer. The use of repetition by BASL signers is considered to be pragmatic rather than as a way to clarify meaning.[30]
+
+A study in 2004 by Melanie Metzger and Susan Mather found that Black male signers used constructed action, with or without constructed dialogue, more often than White signers, but never used constructed dialogue by itself.[31] These results were not reproduced in a later study into constructed action and constructed dialogue by McCaskill, which found that Black signers not only used constructed dialogue, but did so more frequently than white signers.[32]
+Lexical variation
+
+Lexical variation between BASL and other dialects of ASL was first noted in the Dictionary of American Sign Language.[14] In a later study of 34 lexical signs, Black signers were found to have 28 signs that White signers did not know.[33] Older signers are more likely to use variant signs than younger signers. Most of these signs, having been developed in segregated schools for the Black Deaf, refer to everyday life. Younger signers of BASL are less likely to use these variants, but when asked about them are aware that older signers have and use these innovative signs.[34]
+Borrowing from African-American English
+Person in orange shirt with hand in front of him with index and middle fingers crooked creating a "bent - v" shape
+The bent-v handshape used in the sign STOP TRIPPING
+
+A body of work has arisen looking at the similarities between Black American Sign Language and African-American English (AAE), since both are language varieties marked by their use in African-American communities. In 1998 John Lewis investigated the incorporation of aspects of AAE into BASL. He reported that, during narrative storytelling by a Black signer, there were "Ebonic shifts" marked by shifts in posture and rhythmicity and by incorporating side-to-side head movement. He concluded that this "songified" quality was related to the style of AAE.[35] This finding was not reproduced by McCaskill, which she attributes to the nature of the speech acts: Lewis analyzed a narrative event while McCaskill used natural or elicited data.[36] Lexical borrowing has been seen in BASL signers under age 3, which is likely due to the advances in mass media—younger signers would have more contact with AAE through movies, television, and the Internet.[37]
+
+When asked about distinctive features of their signing, Black Deaf signers tended to identify a number of idioms borrowed from AAE.[38] Some were literal translations, such as I FEEL YOU or GIRL PLEASE, which are signed the standard way but have meanings different from their literal interpretation.[39][40] Other loan words modified existing signs, such as STOP TRIPPING, which took the bent-v handshape of TRIP and moved it up to the head to indicate a new meaning of "stop imagining things".[41]`

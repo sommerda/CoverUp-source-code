@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar_win86" name="Create Runnable Jar for Project UndergroundApp">
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.sliceTree" value="../SliceTree"/>
+    <property name="dir.workspace" value="${dir.buildfile}"/>
+    <property name="dir.jarfile" value="jars"/>
+  
+    <echo message="Building jars"/>
+	<echo message="${dir.workspace}/bin"/>
+
+    <target name="create_run_jar_win86">
+        <jar destfile="${dir.jarfile}/NinjaPumpkin_Win86.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="com.ethz.app.AppMain"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="${dir.workspace}/bin"/>
+            <fileset dir="${dir.workspace}/lib/win86"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/curve25519.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/sqlite-jdbc-3.8.11.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/json.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/fountainAON.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/xz-1.5.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/json.jar"/>
+        	<zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/win86/swt_Win86.jar"/> 
+            <fileset dir="${dir.sliceTree}/bin"/>    
+        </jar>
+    </target>
+    
+     <target name="create_run_jar_win64">
+        <jar destfile="${dir.jarfile}/NinjaPumpkin_Win86_64.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="com.ethz.app.AppMain"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            
+            <fileset dir="${dir.workspace}/bin"/>
+            <fileset dir="${dir.workspace}/lib/win64"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/curve25519.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/sqlite-jdbc-3.8.11.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/json.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/fountainAON.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/xz-1.5.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/json.jar"/>
+        	<zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/win64/swt_win64.jar"/> 
+            <fileset dir="${dir.sliceTree}/bin"/>     
+        </jar>
+    </target>
+    
+    
+    <target name="create_run_jar_linux86">
+        <jar destfile="${dir.jarfile}/NinjaPumpkin_Linux86.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="com.ethz.app.AppMain"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            
+            <fileset dir="${dir.workspace}/bin"/>
+            <fileset dir="${dir.workspace}/lib/linux86"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/curve25519.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/sqlite-jdbc-3.8.11.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/json.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/fountainAON.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/xz-1.5.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/json.jar"/>
+        	<zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/linux86/swt_linux86.jar"/> 
+            <fileset dir="${dir.sliceTree}/bin"/>    
+        </jar>
+    </target>
+    
+    <target name="create_run_jar_linux64">
+        <jar destfile="${dir.jarfile}/NinjaPumpkin_Linux86_64.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="com.ethz.app.AppMain"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            
+            <fileset dir="${dir.workspace}/bin"/>
+            <fileset dir="${dir.workspace}/lib/linux64"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/curve25519.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/sqlite-jdbc-3.8.11.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/json.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/fountainAON.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/xz-1.5.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/json.jar"/>
+        	<zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/linux64/swt_linux64.jar"/> 
+            <fileset dir="${dir.sliceTree}/bin"/>    
+        </jar>
+    </target>
+    
+      <target name="create_run_jar_mac">
+        <jar destfile="${dir.jarfile}/NinjaPumpkin_Mac.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="com.ethz.app.AppMain"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            
+            <fileset dir="${dir.workspace}/bin"/>
+            <fileset dir="${dir.workspace}/lib/mac"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/curve25519.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/sqlite-jdbc-3.8.11.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/json.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/fountainAON.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/xz-1.5.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/json.jar"/>
+        	<zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/mac/swt_mac.jar"/> 
+            <fileset dir="${dir.sliceTree}/bin"/>    
+        </jar>
+    </target>
+
+	<target name="create_run_jar_mac_browser">
+	        <jar destfile="${dir.jarfile}/NinjaPumpkin_Mac_browser.jar" filesetmanifest="mergewithoutmain">
+	            <manifest>
+	                <attribute name="Main-Class" value="com.ethz.app.covertBrowser.CovertBrowserSA"/>
+	                <attribute name="Class-Path" value="."/>
+	            </manifest>
+	             
+	            <fileset dir="${dir.workspace}/bin"/>
+	            <fileset dir="${dir.workspace}/lib/mac"/>
+	            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/curve25519.jar"/>
+	            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/sqlite-jdbc-3.8.11.2.jar"/>
+	            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/json.jar"/>
+	            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/fountainAON.jar"/>
+	            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/xz-1.5.jar"/>
+	            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/json.jar"/>
+	        	<zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/lib/mac/swt_mac.jar"/> 
+	            <fileset dir="${dir.sliceTree}/bin"/>    
+	        </jar>
+	    </target>
+    
+</project>

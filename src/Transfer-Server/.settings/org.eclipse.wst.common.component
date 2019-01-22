@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="UndergroundServer">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="json.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/UndergroundServer/lib/json.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xz-1.5.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/UndergroundServer/lib/xz-1.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="curve25519.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/UndergroundServer/lib/curve25519.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jsoup-1.9.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/UndergroundServer/lib/jsoup-1.9.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="fountain2_0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/UndergroundServer/lib/fountain2_0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-io-2.5.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/UndergroundServer/lib/commons-io-2.5/commons-io-2.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="SliceTree.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/SliceTree/SliceTree">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="UndergroundServer"/>
+        <property name="java-output-path" value="/UndergroundServer/build/classes"/>
+    </wb-module>
+</project-modules>

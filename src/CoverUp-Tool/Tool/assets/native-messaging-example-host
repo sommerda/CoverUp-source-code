@@ -1,0 +1,98 @@
+#!/usr/bin/python2
+
+import base64
+import thread
+import struct
+import time
+import json
+import sys
+
+
+import socket
+import sys
+
+# Parameter for listening socket
+PORT = 43457
+
+# On Windows, the default I/O mode is O_TEXT. Set this to O_BINARY
+# to avoid unwanted modifications of the input/output streams.
+if sys.platform == "win32":
+  import os, msvcrt
+  msvcrt.setmode(sys.stdin.fileno(), os.O_BINARY)
+  msvcrt.setmode(sys.stdout.fileno(), os.O_BINARY)
+
+# Helper function that sends a message to the webapp.
+def send_message(data):
+   # Write message size.
+  sys.stdout.write(struct.pack('I', len(data)))
+  # Write the message itself.
+  sys.stdout.write(data)
+  sys.stdout.flush()
+  
+
+
+# thread that end messages
+def wait_for_data():
+    HOST = '' 
+
+    global ext_app_socket
+
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    try:
+        s.bind((HOST, PORT))
+    except socket.error as msg:
+	print 'Bind failed. Error Code : ' + str(msg[0]) + ' Message ' + msg[1]
+	sys.exit()
+
+    #Start listening on socket
+    s.listen(1)
+
+    while 1:
+        conn, addr = s.accept()
+	data = ""
+	while True:
+	    tmp = conn.recv(4092)
+	    if len(tmp) == 0:
+		break
+	    data += tmp
+	conn.close()
+
+	send_message(json.dumps({ "data" : base64.b64encode(data) }))
+	    
+    s.close()
+
+# Thread that reads messages from the webapp.
+def Main():
+  #logf = open("log.log","a")
+  #logf.write("started\n")
+  message_number = 0
+
+  global ext_app_socket
+
+  thread.start_new_thread(wait_for_data, ())
+  while 1:
+    # Read the message length (first 4 bytes).
+    text_length_bytes = sys.stdin.read(4)
+    if len(text_length_bytes) == 0:
+      sys.exit(0)
+    # Unpack message length as 4 byte integer.
+    text_length = struct.unpack('i', text_length_bytes)[0]
+    # Read the text (JSON object) of the message.
+    #text = sys.stdin.read(text_length).decode('utf-8')
+    msg = sys.stdin.read(text_length)
+    # In headless mode just send an echo message back.
+    #logf.write(text)
+    try:
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        sock.settimeout(0.3)
+        sock.connect(("127.0.0.1", 56789))
+        sock.settimeout(None)
+        #sock.send(message)
+        sock.send(msg)
+        sock.close()
+    except:
+        pass
+
+if __name__ == '__main__':
+  Main()
+    
